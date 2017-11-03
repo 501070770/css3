@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			h1 {
+				text-align: center;
+				margin: 20px;
+			}
+			
+			.box {
+				width: 840px;
+				margin: 0 auto;
+			}
+			.box a:hover .inner{
+				display: block;
+			}
+			.box a {
+				display: inline-block;
+				margin: 10px;
+				border: 1px solid #18A367;
+				position: relative;
+				top: 0;
+				left: 0;
+			}
+			
+			.box .inner {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background: rgba(0, 0, 0, .3);
+				display: none;
+			}
+			
+			.inner p {
+				color: #fff;
+				font-size: 20px;
+				text-align: center;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+			}
+		</style>
+	</head>
+
+	<body>
+		<h1>点击查看效果图</h1>
+		<div class="box">
+			<a href="one/index.html">
+				<img src="src/1.png" />
+				<div class="inner">
+					<p>
+						图片hover悬停效果
+					</p>
+				</div>
+			</a>
+			<a href="two/index.html">
+				<img src="src/2.png" />
+				<div class="inner">
+					<p>
+						3d魔方旋转
+					</p>
+				</div>
+			</a>
+			<a href="three/index.html">
+				<img src="src/3.png" />
+				<div class="inner">
+					<p>
+						小白兔简笔画
+					</p>
+				</div>
+			</a>
+			<a href="four/index.html">
+				<img src="src/4.png" />
+				<div class="inner">
+					<p>
+						滑动解锁
+					</p>
+				</div>
+			</a>
+		</div>
+	</body>
+
+</html>
